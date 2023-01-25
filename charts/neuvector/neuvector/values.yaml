@@ -329,12 +329,12 @@ docker:
   path: /var/run/docker.sock
 
 resources: {}
-  # limits:
-  #   cpu: 400m
-  #   memory: 2792Mi
-  # requests:
-  #   cpu: 100m
-  #   memory: 2280Mi
+  limits:
+    cpu: 400m
+    memory: 2792Mi
+  requests:
+    cpu: 100m
+    memory: 2280Mi
 
 k3s:
   enabled: false
